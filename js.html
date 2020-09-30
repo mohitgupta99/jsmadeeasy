@@ -5,6 +5,7 @@
 
 		h1{
 		font-weight:bold;
+		text-transform: capitalize;
 		}
 
 		p{
@@ -16,8 +17,8 @@
 		}
 		.circle
 		{
-		width:200px;
-		height:200px;
+		width:150px;
+		height:150px;
 		border-radius:50%;
 		float:left;
 		margin-right:100px;			
@@ -42,6 +43,10 @@
 		{
 		background-color:orange;
 		}
+		#grey-circle
+			{
+				bacground-color:tomato;
+			}
 		</style>
     </head>
     <body>
@@ -52,6 +57,7 @@
 	<div class="circle" id="blue-circle"></div>
 	<div class="circle" id="green-circle"></div>
 	<div class="circle" id="yellow-circle"></div>
+	<div class="circle" id="grey-circle"></div>
 	
 	<script type="text/javascript">
 		document.getElementById("orangeCircle").onclick = function() {
@@ -68,6 +74,9 @@
 
 		document.getElementById("yellow-circle").onclick = function() {
 	            document.getElementById("yellow-circle").style.display = "none";
+		}
+		document.getElementById("grey-circle").onclick = function() {
+	            document.getElementById("grey-circle").style.display = "none";
 		}
 		/*addEventListener
 		AJAX*/

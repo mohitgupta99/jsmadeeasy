@@ -1,0 +1,80 @@
+<html>
+   <head>
+	<title>Javascript Practice</title>
+		<style type="text/css">
+
+		h1{
+		font-weight:bold;
+		}
+
+		p{
+		font-style:italic;
+		}
+	
+		#line{
+		font-weight:bold;
+		}
+		.circle
+		{
+		width:200px;
+		height:200px;
+		border-radius:50%;
+		float:left;
+		margin-right:100px;			
+		}
+
+		#blue-circle
+		{
+		background-color:blue;
+		}
+
+		#green-circle
+		{
+		background-color:green;
+		}
+
+		#yellow-circle
+		{
+		background-color:yellow;
+		}
+
+		#orangeCircle
+		{
+		background-color:orange;
+		}
+		</style>
+    </head>
+    <body>
+	<h1>Disappearing Circles Game</h1>
+	<p>If you click on any of circle then it will disappear automatically<p>
+	<p id="line">Click any one of them</p>
+	<div class="circle" id="orangeCircle"></div>
+	<div class="circle" id="blue-circle"></div>
+	<div class="circle" id="green-circle"></div>
+	<div class="circle" id="yellow-circle"></div>
+	
+	<script type="text/javascript">
+		document.getElementById("orangeCircle").onclick = function() {
+	            document.getElementById("orangeCircle").style.display = "none";
+		}
+
+		document.getElementById("blue-circle").onclick = function() {
+	            document.getElementById("blue-circle").style.display = "none";
+		}
+		
+		document.getElementById("green-circle").onclick = function() {
+	            document.getElementById("green-circle").style.display = "none";
+		}
+
+		document.getElementById("yellow-circle").onclick = function() {
+	            document.getElementById("yellow-circle").style.display = "none";
+		}
+		/*addEventListener
+		AJAX*/
+	</script>	
+    </body>
+</html>
+
+
+
+
